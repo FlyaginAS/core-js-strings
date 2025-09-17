@@ -526,7 +526,6 @@ function extractEmails(str) {
 function encodeToRot13(str) {
   function convertCharToROT13(char) {
     const charCode = char.charCodeAt(0);
-    // we have different approach before and after 13th char
     if (
       (charCode >= 65 && charCode <= 77) ||
       (charCode >= 97 && charCode <= 109)
